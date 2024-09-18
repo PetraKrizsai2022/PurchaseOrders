@@ -4,8 +4,7 @@ import org.testng.annotations.Test;
 
 @CucumberOptions(
         features = "src/test/resources/features",
-        glue = "stepdefinitions",
-        dryRun = true
+        glue = "stepdefinitions"
 )
 @Test
 public class TestRunner extends AbstractTestNGCucumberTests {
