@@ -49,6 +49,8 @@ public class StepFile {
                 }
             }
             rowNumber = sheet.getLastRowNum(); //including header
+            workbook.close();
+            fileInputStream.close();
         } catch (IOException e) {
             System.out.println("File could not be opened.");
         }
